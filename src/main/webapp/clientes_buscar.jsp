@@ -16,7 +16,8 @@
 	</form>
 	
 	<%
-		ArrayList<Cliente> clientes = (ArrayList<Cliente>) request.getAttribute("clientes");
+		ArrayList<Cliente> clientes 
+		        = (ArrayList<Cliente>) request.getAttribute("clientes_001");
 		
 		if (clientes != null) {
 			out.println("<ul>");

@@ -61,9 +61,14 @@ public class ClientesBuscarServlet extends HttpServlet {
 		clientes.add(c2);
 
 		// Guardando datos en el scope REQUEST
-		request.setAttribute("clientes", clientes);	
+		// para pasarselo al JSP
+		//                    << key >> , << value >>
+		request.setAttribute("clientes_001", clientes);	
 
-		RequestDispatcher rd = request.getRequestDispatcher("clientes_buscar.jsp");
+		// Envia la salida al jsp : clientes_buscar.jsp
+		RequestDispatcher rd = 
+				request.getRequestDispatcher("clientes_buscar.jsp");
+		
 		rd.forward(request, response);
 
 	}
