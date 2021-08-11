@@ -11,4 +11,6 @@ public class Cliente {
 		return this.nombres + " " + this.paterno + " " + this.materno;
 	}
 
+	// Generar los métodos set y get
+	
 }
