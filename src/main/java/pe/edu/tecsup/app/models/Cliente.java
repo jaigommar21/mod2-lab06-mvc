@@ -11,6 +11,41 @@ public class Cliente {
 		return this.nombres + " " + this.paterno + " " + this.materno;
 	}
 
+
 	// Generar los métodos set y get
+	
+	public int getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
+	}
+
+	public String getNombres() {
+		return nombres;
+	}
+
+	public void setNombres(String nombres) {
+		this.nombres = nombres;
+	}
+
+	public String getPaterno() {
+		return paterno;
+	}
+
+	public void setPaterno(String paterno) {
+		this.paterno = paterno;
+	}
+
+	public String getMaterno() {
+		return materno;
+	}
+
+	public void setMaterno(String materno) {
+		this.materno = materno;
+	}
+
+	
 	
 }
